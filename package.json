@@ -13,6 +13,7 @@
   },
   "scripts": {
     "start": "pm2 start index.js -n elecV2P -o logs/pm2.log -e logs/pm2-error.log --no-daemon",
+    "start-custom":"PORT=8000 node index.js",
     "dev": "set port=12521 && nodemon index.js"
   },
   "license": "Apache-2.0",
